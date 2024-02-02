@@ -1,15 +1,11 @@
-import './App.css';
-import ArrowFunction from './ArrowFunctionComponent/ArrowFunction';
-import Counter from './useStateComponent/Counter';
+import React from 'react'
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Counter/>
-      <ArrowFunction/>
+    <div>
+        
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
