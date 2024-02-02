@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import "./style.css"
 
 const DogCeoContent = () => {
   const [data, setData] = useState();
@@ -49,7 +50,7 @@ const DogCeoContent = () => {
 
   return (
     <div>
-      <h3>Dog Ceo breeds list</h3>
+      <h3>Dog list</h3>
       <div className="d-flex">
         <ul>
           {
@@ -73,8 +74,8 @@ const DogCeoContent = () => {
             ))
           }
         </ul>
-        <div>
-          <img style={{ height: '500px', width: '100%', objectFit: 'cover', display: 'flex' }} src={urlImg} alt='Test' />
+        <div className='dog-img'>
+          <img src={urlImg} alt='Test' />
         </div>
       </div>
     </div>
